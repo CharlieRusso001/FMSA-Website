@@ -1,3 +1,80 @@
 body {
-    background-color: aqua;
+    margin: 0; 
+    background-color: white; 
 }
+
+nav {
+    background-color: lightgrey; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+    display: flex; 
+    align-items: center; 
+    padding: -1px 22px; 
+    width: 100%; 
+    height: 10%; 
+    justify-content: space-between; 
+}
+
+nav .logo-container {
+    width: 10%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+}
+
+.logo-stack {
+    position: relative; 
+    width: 90%; 
+    height: 90%; 
+    clip-path: circle(27.5%); 
+} 
+
+.logo-stack img {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0%; 
+    left: 0; 
+    object-fit: contain; 
+}
+
+nav .brand {
+    display: flex; 
+    justify-content: left; 
+    color: white; 
+    position: relative; 
+    left: -13.5%; 
+    font-size: 1.35rem; 
+}
+
+nav .nav-links {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end; 
+    flex-grow: 1; 
+    padding-right: 30px; 
+} 
+
+nav button {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0px 0px; 
+    border: 0px; 
+    background-color: transparent; 
+    font-size: 1.1rem; 
+    min-width: 0%; 
+    height: 70%; 
+    border-radius: 15%; 
+    flex: 0 0 auto; 
+    padding: 0 17.5px; 
+} 
+
+nav button:hover {
+    transition: 0.2s ease-in; 
+    background-color: rgb(196, 196, 196); 
+    color: black; 
+}
+
