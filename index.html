@@ -12,7 +12,7 @@
     <nav class = navbar>
         <div class = "logo-container">
             <div class = "logo-stack">
-                <img src = "images/FMSALogo.png" id = "logo" onerror = "loadingerror('logo-fallback', this)"> 
+                <img src = "images/FMSALogo.png" id = "logo" onerror = "loadingerror('logo-fallback', 'logo')"> 
                 <div id = "logo-fallback" style = "display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">Logo unavailable</div>
             </div>
         </div>  
@@ -28,7 +28,7 @@
             <button href = "#programs">Programs</button>
             <button href = "#events">Events</button>
             <button href = "#contact-us">Contact Us</button>
-            <button>|||</button>
+            <button onclick = "scrollup()">|||</button>
         </div>
     </nav>
 
