@@ -67,7 +67,7 @@ nav button {
     font-size: 1.1rem; 
     min-width: 0%; 
     height: 70%; 
-    border-radius: 15%; 
+    border-radius: 50% / 100%;
     flex: 0 0 auto; 
     padding: 0 17.5px; 
 } 
@@ -78,3 +78,37 @@ nav button:hover {
     color: black; 
 }
 
+.introfmsa {
+    position: relative; 
+    width: 100%; 
+} 
+
+.introfmsa span {
+    position: relative; 
+    display: inline-block; 
+    font-size: 1.24rem; 
+    width: 23%; 
+    left: 8%; 
+    transform: translateY(50%); 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-weight: 100; 
+} 
+
+.introfmsa button {
+    position: relative; 
+    border-width: 0.08rem; 
+    border-radius: 50% / 100%; 
+    width: 6%; 
+    height: 6%; 
+    font-size: auto; 
+    transform: translateY(290%); 
+    left: -15.5%; 
+} 
+
+.introfmsa img {
+    display: block; 
+    font-size: 7rem; 
+    transform: translateY(120%); 
+    margin: 0 auto; 
+    width: 87%; 
+}
