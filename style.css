@@ -6,6 +6,8 @@ body {
     width: 100%; 
 }
 
+
+
 nav {
     background-color: lightgrey; 
     position: sticky; 
@@ -82,6 +84,8 @@ nav button:hover {
     color: black; 
 }
 
+
+
 .homeintro {
     position: relative; 
     width: 100%; 
@@ -125,12 +129,15 @@ nav button:hover {
     color: transparent;
 }
 
+
+
 .homeaboutus {
     position: relative; 
     transform: translateY(22rem); 
     width: 100%; 
     height: auto; 
     text-align: center; 
+    padding-bottom: 10%; 
 } 
 
 .homeaboutus h1{
@@ -139,26 +146,26 @@ nav button:hover {
     font-size: 3.7rem; 
 } 
 
-.homeaboutus .grid-container {
+.homeaboutus .homeaboutus-grid-container {
     position: relative; 
     width: 85%; 
     margin: auto; 
 } 
 
-.homeaboutus .top-grid-container {
+.homeaboutus .homeaboutus-top-grid-container {
     width: 100%; 
     aspect-ratio:3.5/1;
     display: flex; 
     justify-content: space-between; 
 } 
 
-.homeaboutus .top-box {
+.homeaboutus .homeaboutus-top-box {
     width: 48%; 
     height: 100%; 
-    background-color: #e5eaf1; 
+    background-color: #f0f0f0; 
 }
 
-.homeaboutus .top-grid-container #top-left-box{
+.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -168,7 +175,7 @@ nav button:hover {
     gap: 1.5rem; 
 } 
 
-.homeaboutus .top-grid-container #top-left-box button{
+.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box button{
     color: black; 
     background-color: transparent; 
     font-size: 1.1rem; 
@@ -181,36 +188,36 @@ nav button:hover {
     border-color: black; 
 } 
 
-.homeaboutus .top-grid-container #top-left-box button:hover {
+.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box button:hover {
     transition: 0.2s ease-in; 
-    background-color: #d0d5e6; 
+    background-color: #e0e0e0; 
 }
 
-.homeaboutus .top-grid-container #top-right-box{
+.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-right-box{
     display: flex; 
-    background: linear-gradient(to bottom, #d3daf6, #e5eaf1 70%); 
+    background: linear-gradient(to bottom, #d3daf6, #f0f0f0 70%); 
 } 
 
-.homeaboutus .top-grid-container #top-right-box #top-right-box-circle{
+.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-right-box #homeaboutus-top-right-box-circle{
     width: 33%; 
     aspect-ratio: 1/1; 
     border-radius: 50%;
-    background: #e5eaf1; 
+    background: #f0f0f0; 
     margin: auto; 
     align-items: center;
 } 
 
-.homeaboutus .bottom-grid-container {
+.homeaboutus .homeaboutus-bottom-grid-container {
     width: 100%; 
     display: flex; 
     justify-content: space-between; 
     transform: translateY(1rem); 
 } 
 
-.homeaboutus .bottom-grid-container .bottom-box {
+.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box {
     width: calc(92.5% / 3); 
     aspect-ratio: 1.5/1; 
-    background: #e5eaf1; 
+    background: #f0f0f0; 
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -218,21 +225,155 @@ nav button:hover {
     flex-direction: column; 
 } 
 
-.homeaboutus .bottom-grid-container .bottom-box p {
+.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box p {
     font-size: 1.1rem; 
     width: 80%; 
 } 
 
-.homeaboutus .bottom-grid-container .bottom-box h2 {
+.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box h2 {
     font-size: 1.4rem; 
     width: 100%; 
     transform: translateY(45%); 
 } 
 
-.homeaboutus .bottom-grid-container .bottom-box img {
+.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box img {
     width: calc(46/1397); 
     aspect-ratio: 23/24;
     overflow: hidden; 
     position: relative; 
     transform: translateY(25%); 
 }
+
+
+
+.homeupcoming {
+    position: relative; 
+    transform: translateY(25rem); 
+    display: flex; 
+    width: 85%; 
+    height: 110%; 
+    margin: auto; 
+    background: transparent; 
+    justify-content: center; 
+} 
+
+.homeupcoming .homeupcoming-description { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    width: 33%; 
+} 
+
+.homeupcoming .homeupcoming-description h2 {
+    font-size: 4rem; 
+} 
+
+.homeupcoming .homeupcoming-description p {
+    font-size: 1.1rem; 
+    transform: translateY(-1rem); 
+} 
+
+.homeupcoming .homeupcoming-description button {
+    color: black; 
+    background-color: transparent; 
+    font-size: 1rem; 
+    width: 25%; 
+    height: 7%; 
+    border-radius: 50% / 100%;
+    flex: 0 0 auto; 
+    padding: 0 17.5px; 
+    border: 0.1rem solid black; 
+    border-color: black; 
+    text-align: center; 
+} 
+
+.homeupcoming .homeupcoming-description button:hover {
+    transition: 0.2s ease-in; 
+    background-color: #ebebeb; 
+} 
+
+.homeupcoming .homeupcoming-grid-container {
+    width: 67%; 
+    background: transparent; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-left: auto; 
+    display: flex; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid {
+    width: 90%; 
+    height: 100%; 
+    background: transparent; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid {
+    width: 48%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-top-box{
+    width: 100%; 
+    height: 48%; 
+    background: #f0f0f0; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-bottom-box{
+    width: 100%; 
+    height: 48%; 
+    background: #f0f0f0; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid {
+    background: transparent; 
+    width: 48%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-top-box {
+    width: 100%; 
+    height: 48%; 
+    background: #f0f0f0; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-bottom-box {
+    width: 100%; 
+    height: 48%; 
+    background: #f0f0f0; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid h3 {
+    font-size: 1.4rem; 
+    padding-left: 10%; 
+    padding-top: 24%; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid p {
+    font-size: 1.05rem; 
+    padding-left: 10%; 
+    width: 81%; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid img {
+    float: right; 
+    padding-right: 7%; 
+    padding-top: 7%; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid button {
+    transform: translateX(36%); 
+    background-color: transparent; 
+    border: 0; 
+    font-size: 0.8rem; 
+} 
