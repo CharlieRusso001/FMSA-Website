@@ -1,6 +1,9 @@
 body {
     margin: 0; 
     background-color: white; 
+    font-family: "Arial", sans-serif; 
+    background-color: #F9F8F6; 
+    width: 100%; 
 }
 
 nav {
@@ -23,6 +26,7 @@ nav .logo-container {
     align-items: center; 
     justify-content: center; 
     position: relative; 
+    transform: translateX(-0.5rem); 
 }
 
 .logo-stack {
@@ -78,12 +82,13 @@ nav button:hover {
     color: black; 
 }
 
-.introfmsa {
+.homeintro {
     position: relative; 
     width: 100%; 
+    height: auto; 
 } 
 
-.introfmsa span {
+.homeintro span {
     position: relative; 
     display: inline-block; 
     font-size: 1.24rem; 
@@ -94,7 +99,7 @@ nav button:hover {
     font-weight: 100; 
 } 
 
-.introfmsa button {
+.homeintro button {
     position: relative; 
     border-width: 0.08rem; 
     border-radius: 50% / 100%; 
@@ -105,10 +110,129 @@ nav button:hover {
     left: -15.5%; 
 } 
 
-.introfmsa img {
+.homeintro p {
     display: block; 
     font-size: 7rem; 
-    transform: translateY(120%); 
+    transform: translateY(9.5rem); 
     margin: 0 auto; 
-    width: 87%; 
+    text-align: center; 
+    width: 88%; 
+    font-weight: 600; 
+    background: linear-gradient(to right, black, #938BE1, black); /* color1 → color2 → color1 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.homeaboutus {
+    position: relative; 
+    transform: translateY(22rem); 
+    width: 100%; 
+    height: auto; 
+    text-align: center; 
+} 
+
+.homeaboutus h1{
+    width: 100%; 
+    display: block;
+    font-size: 3.7rem; 
+} 
+
+.homeaboutus .grid-container {
+    position: relative; 
+    width: 85%; 
+    margin: auto; 
+} 
+
+.homeaboutus .top-grid-container {
+    width: 100%; 
+    aspect-ratio:3.5/1;
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+.homeaboutus .top-box {
+    width: 48%; 
+    height: 100%; 
+    background-color: #e5eaf1; 
+}
+
+.homeaboutus .top-grid-container #top-left-box{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 3.5rem; 
+    font-weight: 600; 
+    gap: 1.5rem; 
+} 
+
+.homeaboutus .top-grid-container #top-left-box button{
+    color: black; 
+    background-color: transparent; 
+    font-size: 1.1rem; 
+    width: 20%; 
+    height: 15%; 
+    border-radius: 50% / 100%;
+    flex: 0 0 auto; 
+    padding: 0 17.5px; 
+    border: 0.1rem solid black; 
+    border-color: black; 
+} 
+
+.homeaboutus .top-grid-container #top-left-box button:hover {
+    transition: 0.2s ease-in; 
+    background-color: #d0d5e6; 
+}
+
+.homeaboutus .top-grid-container #top-right-box{
+    display: flex; 
+    background: linear-gradient(to bottom, #d3daf6, #e5eaf1 70%); 
+} 
+
+.homeaboutus .top-grid-container #top-right-box #top-right-box-circle{
+    width: 33%; 
+    aspect-ratio: 1/1; 
+    border-radius: 50%;
+    background: #e5eaf1; 
+    margin: auto; 
+    align-items: center;
+} 
+
+.homeaboutus .bottom-grid-container {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    transform: translateY(1rem); 
+} 
+
+.homeaboutus .bottom-grid-container .bottom-box {
+    width: calc(92.5% / 3); 
+    aspect-ratio: 1.5/1; 
+    background: #e5eaf1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column; 
+} 
+
+.homeaboutus .bottom-grid-container .bottom-box p {
+    font-size: 1.1rem; 
+    width: 80%; 
+} 
+
+.homeaboutus .bottom-grid-container .bottom-box h2 {
+    font-size: 1.4rem; 
+    width: 100%; 
+    transform: translateY(45%); 
+} 
+
+.homeaboutus .bottom-grid-container .bottom-box img {
+    width: calc(46/1397); 
+    aspect-ratio: 23/24;
+    overflow: hidden; 
+    position: relative; 
+    transform: translateY(25%); 
 }
