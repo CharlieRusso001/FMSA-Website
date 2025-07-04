@@ -20,5 +20,4 @@ function navbarbuttonclick(id) {
     }
 
     document.getElementById(id).style.textDecoration = "underline"; 
-    console.log(screen.width); 
 }
