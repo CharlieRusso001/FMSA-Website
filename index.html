@@ -4,6 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>FMSA</title> 
     <link rel = "icon" type = "image/png" href = "images/FMSALogoTransparent.png"> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "osOerPkbsXjU8BTFC",
+            });
+        })();
+    </script>
     <script src = "script.js"></script> 
     <link rel="stylesheet" href = "style.css">
 </head>
@@ -117,10 +127,55 @@
                     <a href = "tel:+8605082236">Call</a> 
                     <p>Support</p>
                 </div>
-            </div>
+            </div> 
         </div>
 
+        <div class = "homecontactus">
+            <div class = "homecontactus-email-container">
+                <div class = "homecontactus-box">
+                    <div class = "homecontactus-box-circle"></div>
+                </div>
 
+                <div class = "homecontactus-email-info-container">
+                    <h2>Contact us</h2> 
+
+                    <div class = "homecontactus-email-row" id = "homecontactus-email-row1">
+                        <div class = "homecontactus-email-info-firstname">
+                            <p id = "Firstname-label">First name</p>
+                            <input class = "homecontactus-email-info-input" id = "FirstName" placeholder = "  First name"> 
+                        </div>
+
+                        <div class = "homecontactus-email-info-lastname">
+                            <p id = "Lastname-label">Last name</p>
+                            <input class = "homecontactus-email-info-input" id = "Lastname" placeholder = "  Last name"> 
+                        </div>
+                    </div>
+
+
+                    <div class = "homecontactus-email-row" id = "homecontactus-email-row2">
+                        <div class = "homecontactus-email-info-email">
+                            <p id = "Email-label">Email *</p>
+                            <input class = "homecontactus-email-info-input" id = "Email" placeholder = "  Email"> 
+                        </div>
+
+                        <div class = "homecontactus-email-info-phone">
+                            <p id = "Phone-label">Phone</p>
+                            <input class = "homecontactus-email-info-input" id = "Phone" placeholder = "  Phone"> 
+                        </div>
+                    </div>
+
+
+                    <div class = "homecontactus-email-row" id = "homecontactus-email-row3">
+                        <div class = "homecontactus-email-info-message">
+                            <p id = "Message-label">Message *</p>
+                            <textarea class = "homecontactus-email-info-input" id = "Message" placeholder = "  Message"></textarea>
+                        </div>
+                    </div> 
+
+                    <input class = "homecontactus-email-info-submit" type = "Submit" onclick = "homecontactus_sendemail()">
+                </div>
+            </div>
+        </div>
 
 
 

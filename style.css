@@ -387,8 +387,8 @@ nav button:hover {
     width: 100%; 
     margin: auto; 
     transform: translateY(23rem); 
-    padding-top: 12%; 
-    padding-bottom: 11%;
+    padding-top: 10%; 
+    padding-bottom: 9%;
 } 
 
 .homegetintouch .homegetintouch-contact-us-container {
@@ -426,3 +426,117 @@ nav button:hover {
     margin: 0.8% 0; 
 } 
 
+
+
+.homecontactus {
+    display: flex; 
+    flex-direction: row;
+    position: relative; 
+    width: 100%; 
+    transform: translateY(23rem); 
+    padding-bottom: 7%; 
+} 
+
+.homecontactus .homecontactus-email-container {
+    display: flex; 
+    width: 85%; 
+    margin: auto; 
+    justify-content: space-between;
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-box {
+    width: 46%; 
+    aspect-ratio: 1.2/1; 
+    background: green; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: linear-gradient(to bottom, #dadbf8, #ebecee 70%, #f1f3e8 90%); 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-box .homecontactus-box-circle { 
+    border-radius: 50%;
+    width: 35%; 
+    aspect-ratio: 1/1; 
+    background: linear-gradient(to bottom, #f7f6fb, #ebecee 90%); 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container {
+    width: 46%; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container h2 {
+    font-size: 2.1rem; 
+    margin-top: 1.2%; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container p {
+    font-size: 1rem; 
+    font-weight: 100;
+    width: 100%; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-input {
+    font-size: 1rem; 
+    border-width: 0; 
+    border-bottom-width: 0.1rem; 
+    border-color: black; 
+    background: transparent; 
+    color: black; 
+    width: 100%; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-row {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%; 
+    gap: 2rem; 
+    transform: translateY(-1.5rem); 
+}
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row1 .homecontactus-email-info-firstname {
+    flex: 1; 
+}
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row1 .homecontactus-email-info-lastname {
+    flex: 1; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row2 .homecontactus-email-info-email {
+    flex: 1; 
+}
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row2 .homecontactus-email-info-phone {
+    flex: 1; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row3 .homecontactus-email-info-message {
+    flex: 1; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container #homecontactus-email-row3 .homecontactus-email-info-message textarea {
+    height: 100%; 
+    font-family: "Arial", sans-serif; 
+    resize: none; 
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-submit { 
+    width: 50%; 
+    height: 10%; 
+    align-self: flex-start; 
+    margin-top: auto; 
+    background: transparent; 
+    border-radius: 20% / 100%;
+    flex: 0 0 auto; 
+    border: 1px solid black;
+} 
+
+.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-submit:hover { 
+    transition: 0.2s ease-in; 
+    background: #ededed; 
+    color: black; 
+}

@@ -41,4 +41,33 @@ function homeupcomingtext() {
     homeupcomingtextstate = !homeupcomingtextstate; 
 
 
+} 
+
+window.onload = function() {
+  emailjs.init("osOerPkbsXjU8BTFC");
+}
+
+function homecontactus_sendemail() {
+    const templateParams = {
+        name: document.getElementById("FirstName").value + " " + document.getElementById("Lastname").value, 
+        time: new Date().toLocaleTimeString(), 
+        message: document.getElementById("Message").value + "\n\nEmail: " + document.getElementById("Email").value + "\nPhone Number: " + document.getElementById("Phone").value, 
+    }; 
+
+    const serviceID = "service_alexon9"; 
+    const templateID = "template_kc9rdwd";
+
+    emailjs.send(serviceID, templateID, templateParams).then(function(response) {
+        alert("Email sent successfully!"); 
+    }, function(error) {
+        alert("Failed to send email, please try again. "); 
+    }); 
+
+    document.getElementById("FirstName").value = null; 
+    document.getElementById("Lastname").value = null; 
+    document.getElementById("Email").value = null; 
+    document.getElementById("Message").value = null; 
+    document.getElementById("Phone").value = null; 
+
+    console.log(templateParams); 
 }
