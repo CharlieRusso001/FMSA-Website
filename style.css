@@ -266,7 +266,7 @@ nav button:hover {
 } 
 
 .homeupcoming .homeupcoming-description h2 {
-    font-size: 4rem; 
+    font-size: 3.5rem; 
 } 
 
 .homeupcoming .homeupcoming-description p {
@@ -377,3 +377,52 @@ nav button:hover {
     border: 0; 
     font-size: 0.8rem; 
 } 
+
+
+
+.homegetintouch {
+    position: relative; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    margin: auto; 
+    transform: translateY(23rem); 
+    padding-top: 12%; 
+    padding-bottom: 11%;
+} 
+
+.homegetintouch .homegetintouch-contact-us-container {
+    display: flex; 
+    width: 85%; 
+    margin: auto; 
+} 
+
+.homegetintouch .homegetintouch-contact-us-container h1{
+    display: flex; 
+    font-size: 3.5rem; 
+    align-items: center; 
+} 
+
+.homegetintouch .homegetintouch-contact-us-container .homegetintouch-contact-us-info {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 45%; 
+    margin-left: auto; 
+} 
+
+.homegetintouch .homegetintouch-contact-us-container .homegetintouch-contact-us-info h3 { 
+    font-size: 1.5rem; 
+} 
+
+.homegetintouch .homegetintouch-contact-us-container .homegetintouch-contact-us-info p { 
+    font-size: 1.2rem; 
+    margin: 0.8% 0; 
+} 
+
+.homegetintouch .homegetintouch-contact-us-container .homegetintouch-contact-us-info a { 
+    font-size: 1.2rem; 
+    margin: 0.8% 0; 
+} 
+
