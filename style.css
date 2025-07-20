@@ -1,3 +1,7 @@
+:root{
+    --header-text-size: 3.7rem;
+}
+
 body {
     margin: 0; 
     background-color: white; 
@@ -87,57 +91,25 @@ nav button:hover {
 
 
 .homeintro {
-    position: relative; 
-    width: 100%; 
-    height: auto; 
-    padding-bottom: 0rem; 
+    width: 100vw; 
+    height: 75vh; 
 
     background-image: url("images/HomeIntroImg.png");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden; 
-    aspect-ratio: 2.4 / 1; 
+    align-items: center;
+    justify-content: center;
 } 
 
-.homeintro span {
-    position: relative; 
-    display: inline-block; 
-    font-size: 1.24rem; 
-    width: 23%; 
-    left: 8%; 
-    transform: translateY(50%); 
-    font-family: "Arial Narrow", Arial, sans-serif; 
-    font-weight: 100; 
-} 
-
-.homeintro button {
-    position: relative; 
-    border-width: 0.08rem; 
-    border-radius: 50% / 100%; 
-    width: 6%; 
-    height: 6%; 
-    font-size: auto; 
-    transform: translateY(290%); 
-    left: -15.5%; 
-    background: transparent; 
-} 
-
-.homeintro button:hover { 
-    transition: 0.2s ease-in; 
-    background: #c6ceea
-}
-
-.homeintro p {
-    display: block; 
-    font-size: 7rem; 
-    transform: translateY(9.5rem); 
-    margin: 0 auto; 
+#introfmsa-brand {
+    display: flex; 
+    justify-content: center;
+    font-size: 7rem;     
     text-align: center; 
-    width: 88%; 
-    font-weight: 600; 
+    font-weight: 600;
     background: linear-gradient(to right, black, #938BE1, black); /* color1 → color2 → color1 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,43 +117,79 @@ nav button:hover {
     color: transparent;
 }
 
+#introfmsa-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem; 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-weight: 100; 
+    transform: translateY(-100%);
+} 
+
+#introfmsa-button {
+    display: flex;
+    margin: auto;
+    border-radius: 2rem;
+    border: grey 2px solid;
+    backdrop-filter: blur(24px);
+    z-index: 4;
+    padding: 1rem 3rem;
+    font-size: auto; 
+    font-weight: 400;
+    margin-top: 5vh;
+    background: transparent; 
+    transition: 0.15s ease;
+    font-size: 24px;
+} 
+
+#introfmsa-button:hover { 
+    transition: 0.15s ease;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+#introfmsa-button:active{
+    transform: scale(0.95);
+}
+
+
 
 
 .homeaboutus {
     position: relative; 
-    transform: translateY(22rem); 
+    margin-top: 20vh;
     width: 100%; 
     height: auto; 
     text-align: center; 
     padding-bottom: 10%; 
 } 
 
-.homeaboutus h1{
-    width: 100%; 
-    display: block;
-    font-size: 3.7rem; 
+#homeaboutus-title{
+    font-size: var(--header-text-size); 
 } 
 
-.homeaboutus .homeaboutus-grid-container {
+.homeaboutus-grid-container {
     position: relative; 
     width: 85%; 
     margin: auto; 
 } 
 
-.homeaboutus .homeaboutus-top-grid-container {
+.homeaboutus-top-grid-container {
     width: 100%; 
     aspect-ratio:3.5/1;
     display: flex; 
     justify-content: space-between; 
 } 
 
-.homeaboutus .homeaboutus-top-box {
+.homeaboutus-top-box {
     width: 48%; 
     height: 100%; 
     background-color: #f0f0f0; 
 }
 
-.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box{
+#homeaboutus-top-left-box{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -191,30 +199,34 @@ nav button:hover {
     gap: 1.5rem; 
 } 
 
-.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box button{
-    color: black; 
+ #homeaboutus-top-left-box-button{
     background-color: transparent; 
+    backdrop-filter: blur(24px);
     font-size: 1.1rem; 
-    width: 20%; 
-    height: 15%; 
-    border-radius: 50% / 100%;
-    flex: 0 0 auto; 
-    padding: 0 17.5px; 
+    border-radius: 2rem;
+    padding: 0.75rem 2rem; 
     border: 0.1rem solid black; 
     border-color: black; 
+    transition: 0.15s ease;
 } 
 
-.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box button:hover {
-    transition: 0.2s ease-in; 
-    background-color: #e0e0e0; 
+#homeaboutus-top-left-box-button:hover {
+    transition: 0.15s ease; 
+    color: white;
+    background-color: #000000; 
+    cursor: pointer
 }
 
-.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-right-box{
+#homeaboutus-top-left-box-button:active{
+    transform: scale(0.95);
+}
+
+#homeaboutus-top-right-box{
     display: flex; 
     background: linear-gradient(to bottom, #d3daf6, #f0f0f0 70%); 
 } 
 
-.homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-right-box #homeaboutus-top-right-box-circle{
+#homeaboutus-top-right-box-circle{
     width: 33%; 
     aspect-ratio: 1/1; 
     border-radius: 50%;
@@ -223,14 +235,14 @@ nav button:hover {
     align-items: center;
 } 
 
-.homeaboutus .homeaboutus-bottom-grid-container {
+.homeaboutus-bottom-grid-container {
     width: 100%; 
     display: flex; 
     justify-content: space-between; 
     transform: translateY(1rem); 
 } 
 
-.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box {
+.homeaboutus-bottom-box {
     width: calc(92.5% / 3); 
     aspect-ratio: 1.5/1; 
     background: #f0f0f0; 
@@ -241,18 +253,18 @@ nav button:hover {
     flex-direction: column; 
 } 
 
-.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box p {
+ .homeaboutus-bottom-box p {
     font-size: 1.1rem; 
     width: 80%; 
 } 
 
-.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box h2 {
+ .homeaboutus-bottom-box h2 {
     font-size: 1.4rem; 
     width: 100%; 
     transform: translateY(45%); 
 } 
 
-.homeaboutus .homeaboutus-bottom-grid-container .homeaboutus-bottom-box img {
+ .homeaboutus-bottom-box img {
     width: calc(46/1397); 
     aspect-ratio: 23/24;
     overflow: hidden; 
@@ -264,7 +276,7 @@ nav button:hover {
 
 .homeupcoming {
     position: relative; 
-    transform: translateY(25rem); 
+    transform: translateY(5rem); 
     display: flex; 
     width: 85%; 
     height: 110%; 
@@ -273,43 +285,50 @@ nav button:hover {
     justify-content: center; 
 } 
 
-.homeupcoming .homeupcoming-description { 
+.homeupcoming-header{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.homeupcoming-description { 
     display: flex; 
+    line-height: 1.5;
     flex-direction: column; 
     align-items: flex-start; 
     justify-content: center; 
     width: 33%; 
 } 
 
-.homeupcoming .homeupcoming-description h2 {
-    font-size: 3.5rem; 
-} 
-
-.homeupcoming .homeupcoming-description p {
+.homeupcoming-description p {
     font-size: 1.1rem; 
-    transform: translateY(-1rem); 
+    transform: translateY(-1rem);
 } 
 
-.homeupcoming .homeupcoming-description button {
+.register {
+    display: flex;
     color: black; 
     background-color: transparent; 
+    backdrop-filter: blur(24px);
     font-size: 1rem; 
-    width: 25%; 
-    height: 7%; 
-    border-radius: 50% / 100%;
-    flex: 0 0 auto; 
-    padding: 0 17.5px; 
+    border-radius: 2rem;
+    padding: 16px 25px; 
     border: 0.1rem solid black; 
     border-color: black; 
     text-align: center; 
+    transition: 0.15s ease;;
 } 
 
-.homeupcoming .homeupcoming-description button:hover {
-    transition: 0.2s ease-in; 
-    background-color: #ebebeb; 
+.register:hover {
+    transition: 0.15s ease; 
+    cursor: pointer;
+    color: white;
+    background-color: #000000; 
 } 
+.register:active{
+    transform: scale(0.95);
+}
 
-.homeupcoming .homeupcoming-grid-container {
+.homeupcoming-grid-container {
     width: 67%; 
     background: transparent; 
     flex-direction: row; 
@@ -318,7 +337,7 @@ nav button:hover {
     display: flex; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid {
+.homeupcoming-grid {
     width: 90%; 
     height: 100%; 
     background: transparent; 
@@ -328,27 +347,26 @@ nav button:hover {
     justify-content: space-between; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid {
+.homeupcoming-left-grid {
     width: 48%; 
     height: 100%; 
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
 } 
-
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-top-box{
+#homeupcoming-left-top-box{
     width: 100%; 
     height: 48%; 
     background: #f0f0f0; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-bottom-box{
+ #homeupcoming-left-bottom-box{
     width: 100%; 
     height: 48%; 
     background: #f0f0f0; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid {
+.homeupcoming-right-grid {
     background: transparent; 
     width: 48%; 
     height: 100%; 
@@ -357,13 +375,13 @@ nav button:hover {
     justify-content: space-between;
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-top-box {
+ #homeupcoming-right-top-box {
     width: 100%; 
     height: 48%; 
     background: #f0f0f0; 
-} 
+}
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-bottom-box {
+ #homeupcoming-right-bottom-box {
     width: 100%; 
     height: 48%; 
     background: #f0f0f0; 
@@ -387,12 +405,16 @@ nav button:hover {
     padding-top: 7%; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid button {
+#homeupcomingbutton {
     transform: translateX(36%); 
     background-color: transparent; 
     border: 0; 
     font-size: 0.8rem; 
 } 
+
+#homeupcomingbutton:hover{
+    cursor: pointer;
+}
 
 
 
@@ -403,8 +425,7 @@ nav button:hover {
     width: 100%; 
     margin: auto; 
     transform: translateY(23rem); 
-    padding-top: 10%; 
-    padding-bottom: 9%;
+    padding-bottom: 8vh;
 } 
 
 .homegetintouch .homegetintouch-contact-us-container {
@@ -540,7 +561,7 @@ nav button:hover {
     resize: none; 
 } 
 
-.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-submit { 
+.homecontactus-email-info-submit { 
     width: 50%; 
     height: 10%; 
     align-self: flex-start; 
@@ -549,13 +570,18 @@ nav button:hover {
     border-radius: 20% / 100%;
     flex: 0 0 auto; 
     border: 1px solid black;
+    transition: 0.15s ease; 
 } 
 
-.homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-submit:hover { 
-    transition: 0.2s ease-in; 
-    background: #ededed; 
-    color: black; 
+.homecontactus-email-info-submit:hover { 
+    cursor: pointer;
+    transition: 0.15s ease; 
+    background: #000000; 
+    color: rgb(255, 255, 255); 
 } 
+.homecontactus-email-info-submit:active{
+    transform: scale(0.95);
+}
 
 
 
