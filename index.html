@@ -1,182 +1,203 @@
 <!--tab titles-->
+
 <head>
-    <meta charset = "UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>FMSA</title> 
-    <link rel = "icon" type = "image/png" href = "images/FMSALogoTransparent.png"> 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMSA</title>
+    <link rel="icon" type="image/png" href="images/FMSALogoTransparent.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init({
                 publicKey: "osOerPkbsXjU8BTFC",
             });
         })();
     </script>
-    <script src = "script.js"></script> 
-    <link rel="stylesheet" href = "style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <!-- testing contributor access -->
-<body>
-    <nav class = navbar>
-        <div class = "logo-container">
-            <div class = "logo-stack">
-                <img src = "images/FMSALogo.png" id = "logo" onerror = "loadingerror('logo-fallback', 'logo')"> 
-                <div id = "logo-fallback" style = "display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">Logo unavailable</div>
-            </div>
-        </div>  
 
-        <div class = "brand">
-            <p>Scholars in Sound - FMSA</p>
+<body>
+    <nav class=navbar>
+        <div class="logo-container">
+            <div class="logo-stack">
+                <img src="images/FMSA-Circular-Logo.png" id="logo" onerror="loadingerror('logo-fallback', 'logo')">
+                <p class="brand">Scholars in Sound - FMSA</p>
+                <div id="logo-fallback"
+                    style="display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">
+                    Logo unavailable</div>
+            </div>
         </div>
 
-        <div id = "nav-link" class = "nav-link">
-            <button id = "home" onclick = "window.location.href='index.html'" onclick = "navbarbuttonclick('home')">Home</button>
-            <button id = "about-us" onclick = "window.location.href='about-us.html'" onclick = "navbarbuttonclick('about-us')">About Us</button> 
-            <button id = "our-work" onclick = "window.location.href='our-work.html'" onclick = "navbarbuttonclick('our-work')">Our Work</button>
-            <button id = "programs" onclick = "window.location.href='programs.html'" onclick = "navbarbuttonclick('programs')">Programs</button>
-            <button id = "events" onclick = "window.location.href='events.html'" onclick = "navbarbuttonclick('events')">Events</button>
-            <button id = "contact-us" onclick = "window.location.href='contact-us.html'" onclick = "navbarbuttonclick('contact-us')">Contact Us</button>
-            <button onclick = "scrollup()">|||</button>
+
+
+        <div id="nav-link" class="nav-link">
+            <button id="home" onclick="window.location.href='index.html'"
+                onclick="navbarbuttonclick('home')">Home</button>
+            <button id="about-us" onclick="window.location.href='about-us.html'"
+                onclick="navbarbuttonclick('about-us')">About Us</button>
+            <button id="our-work" onclick="window.location.href='our-work.html'"
+                onclick="navbarbuttonclick('our-work')">Our Work</button>
+            <button id="programs" onclick="window.location.href='programs.html'"
+                onclick="navbarbuttonclick('programs')">Programs</button>
+            <button id="events" onclick="window.location.href='events.html'"
+                onclick="navbarbuttonclick('events')">Events</button>
+            <button id="contact-us" onclick="window.location.href='contact-us.html'"
+                onclick="navbarbuttonclick('contact-us')">Contact Us</button>
+            <button onclick="scrollup()">|||</button>
         </div>
     </nav>
 
-    <div class = "home">
+    <div class="home">
 
-        <div class = "homeintro"> 
-            <span id = "introfmsa-text">Welcome to Farmington Music Student Association, also known as Scholars in Sound, where we celebrate musical talent and creativity. </span>
-            <button id = "introfmsa-button">Join Us</button> 
-            <p id = "introfmsa-brand">SCHOLARS IN SOUND</p> 
+        <div class="homeintro">
+            <p id="introfmsa-brand">SCHOLARS IN SOUND</p>
+            <span id="introfmsa-text">Welcome to Farmington Music Student Association, also known as Scholars in Sound,
+                where we celebrate musical talent and creativity. </span>
+            <button id="introfmsa-button">Join Us</button>
         </div>
 
-        <div class = "homeaboutus"> 
-            <h1 id = "homeaboutus-title">About Us </h2> 
-            <div class = "homeaboutus-grid-container">
-                <div class = "homeaboutus-top-grid-container">
-                    <div class = "homeaboutus-top-box" id = "homeaboutus-top-left-box">Our Programs
-                        <button id = "homeaboutus-top-left-box-button">Explore</button>
+        <div class="homeaboutus">
+            <h1 id="homeaboutus-title">About Us </h2>
+                <div class="homeaboutus-grid-container">
+                    <div class="homeaboutus-top-grid-container">
+                        <div class="homeaboutus-top-box" id="homeaboutus-top-left-box">
+                            Our Programs
+                            <button id="homeaboutus-top-left-box-button">Explore</button>
+                        </div>
+                        <div class="homeaboutus-top-box" id="homeaboutus-top-right-box">
+                            <div id="homeaboutus-top-right-box-circle"></div>
+                        </div>
                     </div>
-                    <div class = "homeaboutus-top-box" id = "homeaboutus-top-right-box">
-                        <div id = "homeaboutus-top-right-box-circle"></div>
+                    <div class="homeaboutus-bottom-grid-container">
+                        <div class="homeaboutus-bottom-box" id="homeaboutus-top-left-box">
+                            <img src="images/PerformanceOpportunitiesImg.png">
+                            <h2>Performance Opportunities</h2>
+                            <p>Engage in hands-on music workshops to enhance your skill and knowledge. </p>
+                        </div>
+                        <div class="homeaboutus-bottom-box" id="homeaboutus-top-middle-box">
+                            <img src="images/CollaborativeProjectsImg.png">
+                            <h2>Collaborative Projects</h2>
+                            <p>Showcase your talent through various performance opportunities and reach a wider
+                                audeince. </p>
+                        </div>
+                        <div class="homeaboutus-bottom-box" id="homeaboutus-top-right-bottom-box">
+                            <img src="images/SkillDevelopmentImg.png">
+                            <h2>Skill Development</h2>
+                            <p>Collaborate with fellow musicians on exciting projects that promote creativity and
+                                teamwork. </p>
+                        </div>
                     </div>
-                </div> 
-                <div class = "homeaboutus-bottom-grid-container">
-                    <div class = "homeaboutus-bottom-box" id = "homeaboutus-top-left-box"> 
-                        <img src = "images/PerformanceOpportunitiesImg.png"> 
-                        <h2>Performance Opportunities</h2>
-                        <p>Engage in hands-on music workshops to enhance your skill and knowledge. </p> 
-                    </div> 
-                    <div class = "homeaboutus-bottom-box" id = "homeaboutus-top-middle-box"> 
-                        <img src = "images/CollaborativeProjectsImg.png"> 
-                        <h2>Collaborative Projects</h2>
-                        <p>Showcase your talent through various performance opportunities and reach a wider audeince. </p> 
-                    </div> 
-                    <div class = "homeaboutus-bottom-box" id = "homeaboutus-top-right-box"> 
-                        <img src = "images/SkillDevelopmentImg.png"> 
-                        <h2>Skill Development</h2>
-                        <p>Collaborate with fellow musicians on exciting projects that promote creativity and teamwork. </p> 
-                    </div> 
                 </div>
-            </div>
         </div>
 
-        <div class = "homeupcoming">
-            <div class = "homeupcoming-description">
-                <h2>Upcoming Events</h2> 
-                <p>Join us for our upcoming concert, a night filled with music, passion, and talent. </p> 
-                <button>Register</button>
+        <div class="homeupcoming">
+            <div class="homeupcoming-description">
+                <h2 class="homeupcoming-header">Upcoming Events</h2>
+                <p>Join us for our upcoming concert, a night filled with music, passion, and talent. </p>
+                <button class="register">Register</button>
             </div>
-            <div class = "homeupcoming-grid-container">
-                <div class = "homeupcoming-grid">
-                    <div class = "homeupcoming-left-grid">
-                        <div class = "homeupcoming-left-box" id = "homeupcoming-left-top-box"> 
-                            <img src = "images/RetirementHomeVisitsImg.png"> 
+            <div class="homeupcoming-grid-container">
+                <div class="homeupcoming-grid">
+                    <div class="homeupcoming-left-grid">
+                        <div class="homeupcoming-left-box" id="homeupcoming-left-top-box">
+                            <img src="images/RetirementHomeVisitsImg.png">
                             <h3>Retirement Home Visits</h3>
-                            <p>We will visit senior and retirement homes often to share our music for the seniors living there! </p>
+                            <p>We will visit senior and retirement homes often to share our music for the seniors living
+                                there! </p>
                         </div>
-                        <div class = "homeupcoming-left-box" id = "homeupcoming-left-bottom-box">
-                            <img src = "images/HospitalHospicePerformancesImg.png"> 
-                            <h3>Hospital/Hospice Performances</h3> 
-                            <p>Our connections with hospitals and hospices will allow us to perform for patients living there, giving them more chances to experience live performances. </p>
+                        <div class="homeupcoming-left-box" id="homeupcoming-left-bottom-box">
+                            <img src="images/HospitalHospicePerformancesImg.png">
+                            <h3>Hospital/Hospice Performances</h3>
+                            <p>Our connections with hospitals and hospices will allow us to perform for patients living
+                                there, giving them more chances to experience live performances. </p>
                         </div>
                     </div>
 
-                    <div class = "homeupcoming-right-grid">
-                        <div class = "homeupcoming-right-box" id = "homeupcoming-right-top-box">
-                            <img src = "images/MusicalShowcaseFundraisersImg.png"> 
+                    <div class="homeupcoming-right-grid">
+                        <div class="homeupcoming-right-box" id="homeupcoming-right-top-box">
+                            <img src="images/MusicalShowcaseFundraisersImg.png">
                             <h3>Musical Showcase Fundraisers</h3>
-                            <p>Performances in public spaces such as restaurants, malls, and more. We aim to gain funds for music education or in order to donate for a greater cause. </p>
+                            <p>Performances in public spaces such as restaurants, malls, and more. We aim to gain funds
+                                for music education or in order to donate for a greater cause. </p>
                         </div>
-                        <div class = "homeupcoming-right-box" id = "homeupcoming-right-bottom-box"> 
-                            <img src = "images/MusicPlaylistImg.png"> 
-                            <h3 id = "homeupcomingh3">Music Playlist</h3> 
-                            <p id = "homeupcomingdescription">Created by our student-led music association, this international playlist blends live performances from young musicians with AI-generated pieces composed using student-written algorithms. Combining music... </p>
-                            <button onclick = "homeupcomingtext()" id = "homeupcomingbutton">Show More</button>
+                        <div class="homeupcoming-right-box" id="homeupcoming-right-bottom-box">
+                            <img src="images/MusicPlaylistImg.png">
+                            <h3 id="homeupcomingh3">Music Playlist</h3>
+                            <p id="homeupcomingdescription">Created by our student-led music association, this
+                                international playlist blends live performances from young musicians with AI-generated
+                                pieces composed using student-written algorithms. Combining music... </p>
+                            <button onclick="homeupcomingtext()" id="homeupcomingbutton">Show More</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class = "homegetintouch">
-            <div class = "homegetintouch-contact-us-container">
-                <h1>Get in Touch</h1> 
-                <div class = "homegetintouch-contact-us-info">
-                    <h3>Contact Us</h3> 
-                    <p>Visit Us at Farmington, US</p> 
-                    <a href = "tel:+8605082236">Call</a> 
+        <div class="homegetintouch">
+            <div class="homegetintouch-contact-us-container">
+                <h1>Get in Touch</h1>
+                <div class="homegetintouch-contact-us-info">
+                    <h3>Contact Us</h3>
+                    <p>Visit Us at Farmington, US</p>
+                    <a href="tel:+8605082236">Call</a>
                     <p>Support</p>
                 </div>
-            </div> 
+            </div>
         </div>
 
-        <div class = "homecontactus">
-            <div class = "homecontactus-email-container">
-                <div class = "homecontactus-box">
-                    <div class = "homecontactus-box-circle"></div>
+        <div class="homecontactus">
+            <div class="homecontactus-email-container">
+                <div class="homecontactus-box">
+                    <div class="homecontactus-box-circle"></div>
                 </div>
 
-                <div class = "homecontactus-email-info-container">
-                    <h2>Contact us</h2> 
+                <div class="homecontactus-email-info-container">
+                    <h2>Contact us</h2>
 
-                    <div class = "homecontactus-email-row" id = "homecontactus-email-row1">
-                        <div class = "homecontactus-email-info-firstname">
-                            <p id = "Firstname-label">First name</p>
-                            <input class = "homecontactus-email-info-input" id = "FirstName" placeholder = "  First name"> 
+                    <div class="homecontactus-email-row" id="homecontactus-email-row1">
+                        <div class="homecontactus-email-info-firstname">
+                            <p id="Firstname-label">First name</p>
+                            <input class="homecontactus-email-info-input" id="FirstName" placeholder="  First name">
                         </div>
 
-                        <div class = "homecontactus-email-info-lastname">
-                            <p id = "Lastname-label">Last name</p>
-                            <input class = "homecontactus-email-info-input" id = "Lastname" placeholder = "  Last name"> 
-                        </div>
-                    </div>
-
-
-                    <div class = "homecontactus-email-row" id = "homecontactus-email-row2">
-                        <div class = "homecontactus-email-info-email">
-                            <p id = "Email-label">Email *</p>
-                            <input class = "homecontactus-email-info-input" id = "Email" placeholder = "  Email"> 
-                        </div>
-
-                        <div class = "homecontactus-email-info-phone">
-                            <p id = "Phone-label">Phone</p>
-                            <input class = "homecontactus-email-info-input" id = "Phone" placeholder = "  Phone"> 
+                        <div class="homecontactus-email-info-lastname">
+                            <p id="Lastname-label">Last name</p>
+                            <input class="homecontactus-email-info-input" id="Lastname" placeholder="  Last name">
                         </div>
                     </div>
 
 
-                    <div class = "homecontactus-email-row" id = "homecontactus-email-row3">
-                        <div class = "homecontactus-email-info-message">
-                            <p id = "Message-label">Message *</p>
-                            <textarea class = "homecontactus-email-info-input" id = "Message" placeholder = "  Message"></textarea>
+                    <div class="homecontactus-email-row" id="homecontactus-email-row2">
+                        <div class="homecontactus-email-info-email">
+                            <p id="Email-label">Email *</p>
+                            <input class="homecontactus-email-info-input" id="Email" placeholder="  Email">
                         </div>
-                    </div> 
 
-                    <input class = "homecontactus-email-info-submit" type = "Submit" onclick = "homecontactus_sendemail()">
+                        <div class="homecontactus-email-info-phone">
+                            <p id="Phone-label">Phone</p>
+                            <input class="homecontactus-email-info-input" id="Phone" placeholder="  Phone">
+                        </div>
+                    </div>
+
+
+                    <div class="homecontactus-email-row" id="homecontactus-email-row3">
+                        <div class="homecontactus-email-info-message">
+                            <p id="Message-label">Message *</p>
+                            <textarea class="homecontactus-email-info-input" id="Message"
+                                placeholder="  Message"></textarea>
+                        </div>
+                    </div>
+                    <button class="homecontactus-email-info-submit" type="submit" onclick="homecontactus_sendemail()">
+                        Submit
+                    </button>
+
                 </div>
             </div>
         </div>
 
-    </div> 
+    </div>
+
 </body>
