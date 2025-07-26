@@ -624,4 +624,57 @@ nav button:hover {
     padding: 0 17.5px; 
     border: 0.1rem solid black; 
     text-align: center; 
-}
+} 
+
+
+
+.aboutus-our-journey { 
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 1%; 
+    height: 75%; 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-left { 
+    height: 100%; 
+    width: 165%; 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-right { 
+    height: 100%; 
+    padding: 0 5%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-right h2 { 
+    font-size: 3.4rem; 
+    transform: translateY(-15%); 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-right p { 
+    font-size: 1.1rem; 
+    transform: translateY(-35%); 
+    width: 90%; 
+    line-height: 1.8rem; 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-right button { 
+    font-size: 0.89rem; 
+    transform: translateY(-70%); 
+    width: 20%; 
+    height: 9%; 
+    color: black; 
+    background-color: transparent; 
+    border-radius: 40% / 100%;
+    padding: 0 17.5px; 
+    border: 0.1rem solid black; 
+    text-align: center; 
+} 
+
+.aboutus-our-journey .aboutus-our-journey-left img { 
+    width: 100%; 
+} 
