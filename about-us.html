@@ -18,48 +18,52 @@
 </head> 
 
 <body>
-    <nav class=navbar>
-
-        <div class="logo-container">
-            <div class="logo-stack">
-                <img src="images/FMSA-Circular-Logo.png" id="logo" onerror="loadingerror('logo-fallback', 'logo')">
-                <p class="brand">Scholars in Sound - FMSA</p>
-                <div id="logo-fallback"
-                    style="display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">
-                    Logo unavailable</div>
+    <nav class = navbar>
+        <div class = "logo-container">
+            <div class = "logo-stack">
+                <img src = "images/FMSALogo.png" id = "logo" onerror = "loadingerror('logo-fallback', 'logo')"> 
+                <div id = "logo-fallback" style = "display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">Logo unavailable</div>
             </div>
+        </div>  
+
+        <div class = "brand">
+            <p>Scholars in Sound - FMSA</p>
         </div>
 
-        
-
-        <div id="nav-link" class="nav-link">
-            <button id="home" onclick="window.location.href='index.html'"
-                onclick="navbarbuttonclick('home')">Home</button>
-            <button id="about-us" onclick="window.location.href='about-us.html'"
-                onclick="navbarbuttonclick('about-us')">About Us</button>
-            <button id="our-work" onclick="window.location.href='our-work.html'"
-                onclick="navbarbuttonclick('our-work')">Our Work</button>
-            <button id="programs" onclick="window.location.href='programs.html'"
-                onclick="navbarbuttonclick('programs')">Programs</button>
-            <button id="events" onclick="window.location.href='events.html'"
-                onclick="navbarbuttonclick('events')">Events</button>
-            <button id="contact-us" onclick="window.location.href='contact-us.html'"
-                onclick="navbarbuttonclick('contact-us')">Contact Us</button>
-            <button onclick="scrollup()">|||</button>
+        <div id = "nav-link" class = "nav-link">
+            <button id = "home" onclick = "window.location.href='index.html'" onclick = "navbarbuttonclick('home')">Home</button>
+            <button id = "about-us" href = "window.location.href='about-us.html'" onclick = "navbarbuttonclick('about-us')">About Us</button> 
+            <button id = "our-work" href = "window.location.href='our-work.html'" onclick = "navbarbuttonclick('our-work')">Our Work</button>
+            <button id = "programs" href = "window.location.href='programs.html'" onclick = "navbarbuttonclick('programs')">Programs</button>
+            <button id = "events" href = "window.location.href='events.html'" onclick = "navbarbuttonclick('events')">Events</button>
+            <button id = "contact-us" href = "window.location.href='contact-us.html'" onclick = "navbarbuttonclick('contact-us')">Contact Us</button>
+            <button onclick = "scrollup()">|||</button>
         </div>
-    </nav>
+    </nav> 
 
     <div class = "aboutus">
         <div class = "aboutus-our-purpose">
             <div class = "aboutus-our-purpose-left-container">
                 <p>Our Purpose</p>  
-                <img src = "images/AboutUsOurPurpose.jpg" id="our-purpose-img"> 
+                <img src = "images/AboutUsOurPurpose.jpg"> 
             </div> 
 
             <div class = "aboutus-our-purpose-right-container">
                 <p>Farmington Music Student Association is a student-founded organization with a mission to share our music with a wider audience. We are dedicated to showcasing our impact on the lives of those involved in our association, providing a platform for students to express their talent and gain valuable performance experience. Join us in our musical journey!</p>
                 <button>Explore</button>
             </div>
+        </div> 
+
+        <div class = "aboutus-our-journey">
+            <div class = "aboutus-our-journey-left">
+                <img src="images/AboutUsOurJourneyImg.jpg">
+            </div> 
+
+            <div class = "aboutus-our-journey-right">
+                <h2>Our Journey</h2> 
+                <p>Founded with a passion for music, our association has grown to become a vibrant community of music enthusiasts. From humble beginnings to impactful performances, our history is a testament to our commitment to musical excellence. </p> 
+                <button>Learn More</button>
+            </div>
         </div>
-    </div>
+    </div> 
 </body> 
