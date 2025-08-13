@@ -23,25 +23,39 @@ function navbarbuttonclick(id) {
 }
 
 let homeupcomingtextstate = false;
+
 function homeupcomingtext() {
-    if (homeupcomingtextstate == false) { //expand 
-        document.getElementById("homeupcomingdescription").innerHTML = "Created by our student-led music association, this international playlist blends live performances from young musicians with AI-generated pieces composed using student-written algorithms. Combining music, technology, and therapy, it’s designed to support emotional well-being in hospitals and retirement homes—helping seniors reconnect with memories and find comfort through sound. ";
-        document.getElementById("homeupcomingh3").style.transform = "translateY(-75%)";
-        document.getElementById("homeupcomingdescription").style.transform = "translateY(-40%)";
-        document.getElementById("homeupcomingbutton").style.transform = "translate(36%, -600%)";
-        document.getElementById("homeupcomingbutton").innerHTML = "Show Less";
-    } else { //shrink 
-        document.getElementById("homeupcomingdescription").innerHTML = "Created by our student-led music association, this international playlist blends live performances from young musicians with AI-generated pieces composed using student-written algorithms. Combining music...";
-        document.getElementById("homeupcomingh3").style.transform = "none";
-        document.getElementById("homeupcomingdescription").style.transform = "none";
-        document.getElementById("homeupcomingbutton").style.transform = "none";
-        document.getElementById("homeupcomingbutton").style.transform = "translate(36%, 0%)";
-        document.getElementById("homeupcomingbutton").innerHTML = "Show More";
+    const heading = document.getElementById("homeupcomingh3");
+    const description = document.getElementById("homeupcomingdescription");
+    const button = document.getElementById("homeupcomingbutton"); 
+    const bottomright = document.getElementById("homeupcoming-right-bottom-box"); 
+    const bottomleft = document.getElementById("homeupcoming-left-bottom-box"); 
+    if (!homeupcomingtextstate) { // Expand
+        description.innerHTML = "Created by our student-led music association, this international playlist blends live performances from young musicians with AI-generated pieces composed using student-written algorithms. Combining music, technology, and therapy, it’s designed to support emotional well-being in hospitals and retirement homes—helping seniors reconnect with memories and find comfort through sound.";
+        
+        bottomright.style.minHeight = "65.5%"; 
+        bottomright.style.marginTop = "8%"; 
+        
+        bottomleft.style.minHeight = "65.5%";
+        bottomleft.style.marginTop = "8%";
+
+        button.innerHTML = "Show Less";
+
+    } else { // Shrink
+        description.innerHTML = "Created by our student-led music association, this international playlist blends live performances from young musicians with AI-generated pieces composed using student-written algorithms. Combining music...";
+        
+        bottomright.style.minHeight = "48%"; 
+        bottomright.style.marginTop = "8%"; 
+        
+        bottomleft.style.minHeight = "48%";
+        bottomleft.style.marginTop = "8%";
+
+        button.innerHTML = "Show More";
     }
+
     homeupcomingtextstate = !homeupcomingtextstate;
-
-
 }
+
 
 window.onload = function () {
     emailjs.init("osOerPkbsXjU8BTFC");

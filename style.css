@@ -123,11 +123,12 @@ nav button:hover {
     transform: translateY(290%); 
     left: -15.5%; 
     background: transparent; 
+    transition: 0.3s ease-in-out; 
 } 
 
 .homeintro button:hover { 
-    transition: 0.2s ease-in; 
-    background: #c6ceea
+    background: black; 
+    color: white; 
 }
 
 .homeintro p {
@@ -200,13 +201,14 @@ nav button:hover {
     border-radius: 50% / 100%;
     flex: 0 0 auto; 
     padding: 0 17.5px; 
-    border: 0.1rem solid black; 
+    border: 0.01rem solid black; 
     border-color: black; 
+    transition: 0.3s ease-in-out; 
 } 
 
 .homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-left-box button:hover {
-    transition: 0.2s ease-in; 
-    background-color: #e0e0e0; 
+    background-color: black; 
+    color: white; 
 }
 
 .homeaboutus .homeaboutus-top-grid-container #homeaboutus-top-right-box{
@@ -271,6 +273,7 @@ nav button:hover {
     margin: auto; 
     background: transparent; 
     justify-content: center; 
+    margin-bottom: 10%; 
 } 
 
 .homeupcoming .homeupcoming-description { 
@@ -299,14 +302,15 @@ nav button:hover {
     border-radius: 50% / 100%;
     flex: 0 0 auto; 
     padding: 0 17.5px; 
-    border: 0.1rem solid black; 
+    border: 0.01rem solid black; 
     border-color: black; 
     text-align: center; 
+    transition: 0.3s ease-in-out; 
 } 
 
 .homeupcoming .homeupcoming-description button:hover {
-    transition: 0.2s ease-in; 
-    background-color: #ebebeb; 
+    background: black; 
+    color: white; 
 } 
 
 .homeupcoming .homeupcoming-grid-container {
@@ -338,13 +342,13 @@ nav button:hover {
 
 .homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-top-box{
     width: 100%; 
-    height: 48%; 
+    min-height: 48%; 
     background: #f0f0f0; 
 } 
 
 .homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-left-grid #homeupcoming-left-bottom-box{
     width: 100%; 
-    height: 48%; 
+    min-height: 48%; 
     background: #f0f0f0; 
 } 
 
@@ -359,13 +363,13 @@ nav button:hover {
 
 .homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-top-box {
     width: 100%; 
-    height: 48%; 
+    min-height: 48%; 
     background: #f0f0f0; 
 } 
 
 .homeupcoming .homeupcoming-grid-container .homeupcoming-grid .homeupcoming-right-grid #homeupcoming-right-bottom-box {
     width: 100%; 
-    height: 48%; 
+    min-height: 48%; 
     background: #f0f0f0; 
 } 
 
@@ -387,11 +391,21 @@ nav button:hover {
     padding-top: 7%; 
 } 
 
-.homeupcoming .homeupcoming-grid-container .homeupcoming-grid button {
-    transform: translateX(36%); 
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid button { 
+    position: relative;
+    left: 8.5%;
+    bottom: 0%;
+    z-index: 10;
     background-color: transparent; 
-    border: 0; 
-    font-size: 0.8rem; 
+    color: #060011; 
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer; 
+    margin-bottom: 2rem; 
+} 
+
+.homeupcoming .homeupcoming-grid-container .homeupcoming-grid button:hover { 
+    color: #266aff; 
 } 
 
 
@@ -548,13 +562,13 @@ nav button:hover {
     background: transparent; 
     border-radius: 20% / 100%;
     flex: 0 0 auto; 
-    border: 1px solid black;
+    border: 1px solid black; 
+    transition: 0.3s ease-in-out; 
 } 
 
 .homecontactus .homecontactus-email-container .homecontactus-email-info-container .homecontactus-email-info-submit:hover { 
-    transition: 0.2s ease-in; 
-    background: #ededed; 
-    color: black; 
+    background: black; 
+    color: white; 
 } 
 
 
@@ -622,8 +636,14 @@ nav button:hover {
     height: 10%; 
     border-radius: 50% / 100%;
     padding: 0 17.5px; 
-    border: 0.1rem solid black; 
+    border: 0.01rem solid black; 
     text-align: center; 
+    transition: 0.3s ease-in-out; 
+} 
+
+.aboutus-our-purpose .aboutus-our-purpose-right-container button:hover {
+    background: black; 
+    color: white; 
 } 
 
 
@@ -671,10 +691,234 @@ nav button:hover {
     background-color: transparent; 
     border-radius: 40% / 100%;
     padding: 0 17.5px; 
-    border: 0.1rem solid black; 
+    border: 0.01rem solid black; 
     text-align: center; 
+    transition: 0.3s ease-in-out; 
 } 
+
+.aboutus-our-journey .aboutus-our-journey-right button:hover {
+    background: black; 
+    color: white; 
+}
 
 .aboutus-our-journey .aboutus-our-journey-left img { 
     width: 100%; 
+} 
+
+
+
+.aboutus-our-influence {
+    position: relative; 
+    width: 100%; 
+    height: 105.6%; 
+    margin-top: 10%; 
+    display: flex; 
+    align-items: center; 
+} 
+
+.aboutus-our-influence img { 
+    width: 60%; 
+    margin-left: 6%; 
+} 
+
+.aboutus-our-influence .aboutus-our-influence-text { 
+    position: absolute; 
+    width: 40%; 
+    height: 63%; 
+    margin-left: 53%; 
+    background: #f0f0f0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+} 
+
+.aboutus-our-influence .aboutus-our-influence-text h2 { 
+    font-size: 2.5rem; 
+    transform: translateY(-15%); 
+    margin-left: 12%; 
+    font-weight: 600; 
+} 
+
+.aboutus-our-influence .aboutus-our-influence-text p { 
+    font-size: 1.1rem; 
+    transform: translateY(-35%); 
+    width: 75%; 
+    line-height: 1.8rem; 
+    margin-left: 12%; 
+    font-weight: 100; 
+    transform: translateY(-26%); 
+} 
+
+.aboutus-our-influence .aboutus-our-influence-text button { 
+    font-size: 0.9rem; 
+    transform: translateY(-70%); 
+    width: 18.2%; 
+    height: 10%; 
+    color: black; 
+    background-color: transparent; 
+    border-radius: 40% / 100%;
+    padding: 0 17.5px; 
+    border: 0.01rem solid black; 
+    text-align: center; 
+    margin-left: 12%; 
+    transition: 0.3s ease-in-out; 
+} 
+
+.aboutus-our-influence .aboutus-our-influence-text button:hover {
+    background: black; 
+    color: white; 
+} 
+
+
+
+.aboutus-meet-our-team {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    height: 95%; 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container { 
+    position: relative; 
+    width: 38%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container h2 {
+    font-size: 3.8rem; 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container p {
+    text-align: center;  
+    font-size: 1.1rem; 
+    transform: translateY(-100%); 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container {
+    position: relative; 
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    margin-top: auto; 
+    height: 1000%; 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container { 
+    width: 42%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container p {
+    transform: translateY(-50%); 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container .aboutus-meet-our-team-container-icon {
+    width: 75%; 
+    aspect-ratio: 1/1;
+    display: flex; 
+    border-radius: 50%; 
+    background: linear-gradient(to bottom, #d3daf6, #f0f0f0 70%); 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container .aboutus-meet-our-team-container-icon .aboutus-meet-our-team-container-icon-circle {
+    width: 33%; 
+    aspect-ratio: 1/1; 
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #fefefc, #eeeef0 70%); 
+    flex-shrink: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-self: center;    
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container .about-us-meet-our-team-social-links {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 10px; 
+    transform: translateY(-50%); 
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container .about-us-meet-our-team-social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    text-decoration: none;
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Stella-container .about-us-meet-our-team-social-links a img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container { 
+    width: 42%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container p {
+    transform: translateY(-50%); 
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container .aboutus-meet-our-team-container-icon {
+    width: 75%; 
+    aspect-ratio: 1/1;
+    display: flex; 
+    border-radius: 50%; 
+    background: linear-gradient(to bottom, #d3daf6, #f0f0f0 70%); 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container .aboutus-meet-our-team-container-icon .aboutus-meet-our-team-container-icon-circle {
+    width: 33%; 
+    aspect-ratio: 1/1; 
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #fefefc, #eeeef0 70%); 
+    flex-shrink: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-self: center;    
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container .about-us-meet-our-team-social-links {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 10px; 
+    transform: translateY(-50%); 
+}
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container .about-us-meet-our-team-social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    text-decoration: none;
+} 
+
+.aboutus-meet-our-team .aboutus-meet-our-team-container .about-us-meet-our-team-pres-container .aboutus-meet-our-team-Amanda-container .about-us-meet-our-team-social-links a img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 } 
