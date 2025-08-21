@@ -922,3 +922,119 @@ nav button:hover {
     height: 100%; 
     object-fit: cover; 
 } 
+
+
+
+/* Done with About Us */ 
+
+
+
+.our-work-cards {
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    height: 85%; 
+    justify-content: center; 
+    align-items: center; 
+    background: green; 
+    overflow: hidden; 
+} 
+
+.our-work-cards .our-work-cards-musical-showcase {
+    width: 1/3; 
+    height: 100%; 
+    background-image: url("images/OurWorkMusicalShowcase.jpg"); 
+    background-size: 100% 100%; 
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.our-work-cards .our-work-cards-musical-showcase-base {
+    width: 63%; 
+    height: 47.5%; 
+    background: rgb(255, 255, 255, 70%); 
+    transform: translateY(21.5%); 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.our-work-cards .our-work-cards-musical-showcase-base h3 {
+    font-size: 1.7rem; 
+    font-weight: 600; 
+    margin-bottom: 0; 
+} 
+
+.our-work-cards .our-work-cards-musical-showcase-base p { 
+    margin-top: 4%; 
+    font-size: 1rem; 
+    line-height: 1.75rem; 
+} 
+
+.our-work-cards .our-work-cards-talent-development {
+    width: 1/3; 
+    height: 100%; 
+    background-image: url("images/OurWorkTalentDevelopment.jpg"); 
+    background-size: 100% 100%; 
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.our-work-cards .our-work-cards-talent-development-base {
+    width: 63%; 
+    height: 47.5%; 
+    background: rgb(255, 255, 255, 70%); 
+    transform: translateY(21.5%); 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.our-work-cards .our-work-cards-talent-development-base h3 {
+    font-size: 1.7rem; 
+    font-weight: 600; 
+    margin-bottom: 0; 
+} 
+
+.our-work-cards .our-work-cards-talent-development-base p { 
+    margin-top: 4%; 
+    font-size: 1rem; 
+    line-height: 1.75rem; 
+} 
+
+.our-work-cards .our-work-cards-performance-experience {
+    width: 1/3; 
+    height: 100%; 
+    background-image: url("images/OurWorkPerformanceExperience.jpg"); 
+    background-size: 100% 100%; 
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.our-work-cards .our-work-cards-performance-experience-base {
+    width: 63%; 
+    height: 47.5%; 
+    background: rgb(255, 255, 255, 70%); 
+    transform: translateY(21.5%); 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.our-work-cards .our-work-cards-performance-experience-base h3 {
+    font-size: 1.7rem; 
+    font-weight: 600; 
+    margin-bottom: 0; 
+} 
+
+.our-work-cards .our-work-cards-performance-experience-base p { 
+    margin-top: 4%; 
+    font-size: 1rem; 
+    line-height: 1.75rem; 
+} 

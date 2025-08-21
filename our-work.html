@@ -1,0 +1,69 @@
+<head>
+    <meta charset = "UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>FMSA</title> 
+    <link rel = "icon" type = "image/png" href = "images/FMSALogoTransparent.png"> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "osOerPkbsXjU8BTFC",
+            });
+        })();
+    </script>
+    <script src = "script.js"></script> 
+    <link rel="stylesheet" href = "style.css">
+</head>
+
+<body>
+    <nav class = navbar>
+        <div class = "logo-container">
+            <div class = "logo-stack">
+                <img src = "images/FMSALogo.png" id = "logo" onerror = "loadingerror('logo-fallback', 'logo')"> 
+                <div id = "logo-fallback" style = "display: none; color: #fff; text-align: center; width: 100%; position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10; ">Logo unavailable</div>
+            </div>
+        </div>  
+
+        <div class = "brand">
+            <p>Scholars in Sound - FMSA</p>
+        </div>
+
+        <div id = "nav-link" class = "nav-link">
+            <button id = "home" onclick = "window.location.href='index.html'" onclick = "navbarbuttonclick('home')">Home</button>
+            <button id = "about-us" onclick = "window.location.href='about-us.html'" onclick = "navbarbuttonclick('about-us')">About Us</button> 
+            <button id = "our-work" onclick = "window.location.href='our-work.html'" onclick = "navbarbuttonclick('our-work')" style = "text-decoration: underline;">Our Work</button>
+            <button id = "programs" onclick = "window.location.href='programs.html'" onclick = "navbarbuttonclick('programs')">Programs</button>
+            <button id = "events" onclick = "window.location.href='events.html'" onclick = "navbarbuttonclick('events')">Events</button>
+            <button id = "contact-us" onclick = "window.location.href='contact-us.html'" onclick = "navbarbuttonclick('contact-us')">Contact Us</button>
+            <button onclick = "scrollup()">|||</button>
+        </div>
+    </nav> 
+
+    <div class = "our-work"> 
+        <div class = "our-work-cards">
+            <div class = "our-work-cards-musical-showcase">
+                <div class = "our-work-cards-musical-showcase-base">
+                    <h3>Musical Showcase</h3> 
+                    <p>Discover how we provide a platform for students to showcase their musical abilities.</p>
+                </div>
+            </div> 
+
+            <div class = "our-work-cards-talent-development">
+                <div class = "our-work-cards-talent-development-base">
+                    <h3>Talent Development</h3> 
+                    <p>Join us in empowering students through skill development and musical exploration.</p>
+                </div>
+            </div> 
+
+            <div class = "our-work-cards-performance-experience">
+                <div class = "our-work-cards-performance-experience-base">
+                    <h3>Performance Experience</h3> 
+                    <p>Gain hands-on experience and confidence by performing in front of a supportive audience.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+</body>
