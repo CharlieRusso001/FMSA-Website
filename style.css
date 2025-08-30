@@ -169,7 +169,10 @@ nav button:active {
 .homeintro p {
     display: block; 
     font-size: 7rem; 
-    transform: translateY(5rem); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto; 
     text-align: center; 
     width: 88%; 
@@ -180,6 +183,7 @@ nav button:active {
     background-clip: text;
     color: transparent;
     animation: gradientFlow 8s linear infinite;
+    z-index: 2;
 }
 
 @keyframes gradientFlow {
@@ -191,43 +195,7 @@ nav button:active {
     }
 }
 
-.homeintro span {
-    position: relative; 
-    display: inline-block; 
-    font-size: 1.24rem; 
-    width: 50%; 
-    left: 25%; 
-    transform: translateY(12rem); 
-    font-family: "Arial Narrow", Arial, sans-serif; 
-    font-weight: 100;
-    text-align: center;
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.5s;
-} 
 
-.homeintro button {
-    position: relative; 
-    border-width: 0.08rem; 
-    border-radius: 50% / 100%; 
-    width: 10%; 
-    height: 6%; 
-    font-size: 1.1rem; 
-    transform: translateY(13rem); 
-    left: 45%; 
-    background: transparent; 
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.8s;
-} 
-
-.homeintro button:hover { 
-    background: black; 
-    color: white;
-    transform: translateY(13rem) scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
 
 
 
